@@ -1,6 +1,6 @@
 import numpy as np
 
-def estimate_pi(num_samples: int = 1_000_000_000) -> float:
+def estimate_pi(num_samples: int = 100_000_000) -> float:
     # 1. Initialize NumPy's modern random number generator
     rng = np.random.default_rng(seed=42)
     
