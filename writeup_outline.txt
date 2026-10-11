@@ -1,0 +1,194 @@
+ONE-PAGE WRITE-UP OUTLINE - 2026 Virginia Datathon (due Thu Oct 15, 12:00 PM)
+DRHS DS-Team2: Rayhan, James, Ibrahim, Dyson
+Focus area: ENERGY (secondary: Living Expenses)
+All numbers below come from energy_burden_analysis.ipynb (outputs/headline_numbers.csv).
+
+=====================================================================
+PAGE BUDGET (~550-600 words + 1 figure + 1 small table)
+=====================================================================
+  Title + one-line hook ............ 25 words
+  1. Problem ....................... 80 words
+  2. Data & method ................. 90 words
+  3. What we found ................. 150 words (bullets, numbers bolded)
+  4. Our solution: Cloud Dividend .. 140 words
+  5. Feasibility / how to do it .... 70 words
+  6. Limits + sources .............. 40 words (small font footer)
+  Figure: 05_typology.png (map half only) OR 03_affordability_gap_scenarios.png
+  Layout tip: two columns. Left = problem/data/findings. Right = figure + solution.
+  Every section should answer at least one judging criterion (marked [DA] data
+  analysis, [IN] innovation, [TH] theme, [FE] feasibility, [PR] presentation).
+
+=====================================================================
+TITLE
+=====================================================================
+  "Who Pays for the Cloud? Protecting Virginia's lowest-income households from
+   data-center-driven electricity costs"
+  Hook (1 sentence): The data centers are in Northern Virginia. The heaviest
+  energy bills, relative to income, are in Southside, the Northern Neck, and
+  Virginia's small cities, and only about 1 in 4 eligible households gets help.
+
+=====================================================================
+1. THE PROBLEM  [TH]
+=====================================================================
+  - VA commercial-sector electricity sales (where data centers are metered) are
+    up 60% since 2016; residential use is flat (EIA).
+  - VA residential price: 13.34 cents/kWh (2022) -> 16.83 cents (Jan-Jul 2026),
+    +26%. SCC approved +$11.24/mo (2026) for Dominion customers (Nov 2025 order).
+  - JLARC (2024): data-center growth alone could add $14-$37/month to a typical
+    Dominion bill by 2040 (constant dollars).
+  - A flat increase isn't flat in its impact. It hits hardest the households
+    already spending a large share of income on energy.
+  - Key question in one sentence: who can least absorb these increases, does
+    current aid reach them, and where should new money go first?
+
+=====================================================================
+2. DATA & METHOD  [DA]
+=====================================================================
+  Data (name them briefly; judges like "well-sourced"):
+    - DOE LEAD Tool (ACS microdata calibrated to utility bills): 466,049
+      households at or below 150% FPL, broken out by income, tenure, building
+      type, building age, and heating fuel, for all 133 localities.
+    - VDSS Energy Assistance Program household counts FFY2017-2025 and SNAP
+      participation (Jul 2026), both from the Datathon 2026 collection on
+      data.virginia.gov.
+    - EIA prices/sales, JLARC Rpt. 598 scenarios, USDA ERS county typology.
+  Method (3 steps, one line each):
+    1) STRESS TEST: update burden to 2026 prices, then apply JLARC's 2040
+       adders per kWh to each household type. Electric-heat and inefficient
+       homes take bigger hits.
+    2) AFFORDABILITY GAP: dollars needed to bring every low-income household's
+       energy bill down to 6% of income.
+    3) REACH + PRIORITY: EAP households paid vs. eligible (and vs. SNAP
+       households), a depth-vs-reach typology, and a Monte Carlo priority
+       ranking. 10,000 draws vary the price scenario, income growth,
+       eligibility, and index weights, so the ranking doesn't hinge on one
+       set of assumptions. [IN]
+
+=====================================================================
+3. WHAT WE FOUND  [DA][TH]  (5 bullets max; bold the numbers)
+=====================================================================
+  F1. Burden is extreme at the bottom. Households at or below 150% FPL spend
+      14.3% of income on home energy vs. 2.1% for all households. Oil- and
+      propane-heated low-income homes spend 21-26%.
+  F2. The gap is large and growing. It costs $749M/yr today to bring every
+      low-income household to 6% of income. That rises to $826M-$955M/yr
+      under JLARC's 2040 scenarios, about +$459/yr per low-income household
+      in the high case. 314K low-income households are already above 10%
+      burden, rising to 358K.
+  F3. Current aid covers about 11% of the gap. EAP paid $82M in FFY2025 and
+      reached about 28% of eligible households. 276,934 SNAP households,
+      already income-verified by the same local DSS office, got no EAP
+      heating aid.
+  F4. Two different problems need two different fixes:
+        - Rural localities: deeper need ($1,947 gap per low-income household
+          vs. $1,510 in metro areas; more oil/propane heat and mobile homes)
+          but higher reach (49%).
+        - Metro localities: reach is only 22%. In the major data-center
+          localities, EAP serves just 14% of eligible households.
+  F5. Robust priorities. These 8 localities rank in the top 20 in at least
+      80% of the 10,000 Monte Carlo draws: Portsmouth, Westmoreland, Radford,
+      Dinwiddie, Mecklenburg, Southampton, Hopewell, Culpeper.
+      (Mecklenburg and Culpeper are themselves data-center markets.)
+      Likely priorities (50-80% of draws): Northumberland, Nelson,
+      Pittsylvania, Richmond city, Botetourt, Halifax, Martinsville, Madison.
+
+=====================================================================
+4. OUR SOLUTION: "THE CLOUD DIVIDEND"  [IN][TH]
+=====================================================================
+  One-line pitch: Set aside about 20% of Virginia's new data-center
+  electricity tax (~$600M/yr) as an Energy Relief Fund, and target it with an
+  open, annually refreshed priority index.
+
+  Match the fix to the typology (show the map here):
+    LEVER 1 - REACH: automatic enrollment (Reach-gap + Double-gap localities)
+      - VDSS matches SNAP households against Dominion/APCo customer files and
+        enrolls them in EAP and PIPP (PIPP caps electric bills at 6% of
+        income, or 10% with electric heat, for households at or below 150%
+        FPL).
+      - Precedent: New York's statewide utility data-match law; Austin
+        Energy's SNAP/Medicaid auto-enrollment.
+      - Pool: 277K SNAP households not in EAP. Serving half at the average
+        $415 benefit costs about $58M/yr. PIPP credits are funded by the
+        utility universal service fee, not the state budget.
+    LEVER 2 - DEPTH: weatherization and heat pumps (Depth-gap + Double-gap)
+      - 40,021 low-income oil/propane-heated or mobile homes in priority
+        localities.
+      - LEAD data shows these homes spend about $2,000/yr more than
+        comparable electric-heated homes.
+      - Doing 1/5 of them per year at about $8,000/home costs about $64M/yr.
+      - Stacks on HB2 (2026), which requires Dominion and APCo to upgrade 30%
+        of low-income oil/propane households by 2031, plus the RGGI-funded
+        DHCD efficiency programs. Our index tells them where to start.
+    LEVER 3 - TARGETING: open Energy Burden Priority Index
+      - Published on data.virginia.gov and refreshed yearly from EAP, SNAP,
+        LEAD, and EIA data.
+      - Directs Levers 1-2 and lets the General Assembly track progress.
+  Bottom line: about $122M/yr, roughly 20% of the data-center tax. That
+  covers most to all of the data-center-driven growth in the gap
+  ($77M-$205M/yr). In short, the industry driving the costs funds the
+  protection.
+
+=====================================================================
+5. FEASIBILITY: HOW IT GETS DONE  [FE]
+=====================================================================
+  - Every piece already exists:
+      - Tax: in effect since 7/1/2026.
+      - EAP + PIPP: run by VDSS through local DSS offices.
+      - HB2 utility mandate: signed 2026.
+      - DHCD weatherization: RGGI rejoined 7/1/2026.
+    No new agency is needed.
+  - Step 1 (2027 session): budget language earmarking a share of the tax.
+    Extend the tax, which currently sunsets 6/30/2028.
+  - Step 2: VDSS-utility data-sharing agreement (NY model).
+  - Step 3: Pilot in the 8 robust-priority localities. Covers 24K low-income
+    households, 16.5K SNAP households not in EAP, and about 4.6K
+    oil/propane/mobile homes, for about $11M/yr (about 2% of the tax).
+  - Step 4: Scale statewide in FY2029 and measure the change in reach and
+    burden with the same index.
+
+=====================================================================
+6. LIMITATIONS (one sentence) + SOURCES (footer, small font)
+=====================================================================
+  Limitations:
+    - LEAD's base is ACS 2018-22, updated to 2026 prices. Incomes grow at the
+      VA median rate, which likely understates low-income burden.
+    - JLARC's scenarios are for Dominion (65% of VA residential customers).
+    - "SNAP households not in EAP" is an outreach pool, not an exact eligible
+      count (SNAP's 200% FPL limit vs. EAP's 130%).
+  Sources:
+    - DOE LEAD Tool 2022
+    - VDSS EAP and SNAP data (data.virginia.gov, Datathon 2026)
+    - EIA Electric Power Monthly / EIA-861
+    - JLARC Rpt. 598 (2024)
+    - SCC PUR-2025-00058
+    - 2026 Appropriation Act (data-center electricity tax)
+    - HB2 (2026)
+    - USDA ERS county typology
+    - VA DSS PIPP
+
+=====================================================================
+FIGURE / TABLE TO EMBED (pick ONE figure for the page; save rest for poster)
+=====================================================================
+  Best single figure: 05_typology.png (right panel). It shows the "two
+    problems, two fixes" idea at a glance, with data-center markets marked.
+  Alternative: 03_affordability_gap_scenarios.png. Strongest for the
+    "who pays" argument (gap bars vs. $82M EAP line vs. $600M tax line).
+  Mini-table (3 rows): Rural vs. Metro vs. Data-center markets, with columns
+    for gap per low-income household, EAP reach, and % oil/propane heat.
+  Poster/monitor extras:
+    - figures/01-06 PNGs
+    - outputs/interactive_burden_map.html (scenario slider: 2026 / 2040 low /
+      2040 high; hover shows reach, gap, typology, priority)
+
+=====================================================================
+WRITING CHECKLIST
+=====================================================================
+  [ ] Name a Commonwealth program in every solution lever (EAP, PIPP, HB2,
+      DHCD weatherization, data-center tax). Judges score "existing programs".
+  [ ] Mention geography (rural vs. metro), demographics (income, renters vs.
+      owners), infrastructure (heating fuel, housing stock), and trends
+      (2022 -> 2026 -> 2040). These are the challenge's listed factors.
+  [ ] Every number traces to the notebook. Use "about" for modeled values.
+  [ ] Credit the Monte Carlo robustness check as the answer to "why these
+      weights?"
+  [ ] Fits on one page at 10-11 pt. Cut adjectives before cutting numbers.

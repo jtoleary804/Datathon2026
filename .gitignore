@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+# large source archives (re-download: see notebook section 1)
+data/raw/lead/*.zip
+data/raw/f8612024.zip
