@@ -1,0 +1,111 @@
+DATA SOURCES - "Who Pays for the Cloud?" (DRHS DS-Team2, 2026 Virginia Datathon)
+All sources are public and were downloaded without login (accessed Oct 11, 2026).
+Local file names refer to data/raw/ in this repo.
+
+=====================================================================
+A. DATASETS USED IN energy_burden_analysis.ipynb
+=====================================================================
+
+1. Energy Assistance Program (EAP) - Household Counts FY2017-2025 (VDSS)
+   Page:     https://data.virginia.gov/dataset/energy-assistance-program-eap-household-counts
+   Download: https://data.virginia.gov/dataset/375583e9-9d36-499e-8d89-d81b943f4df8/resource/90c6befc-12e5-43de-8c27-26813a9f3646/download/eap-household-counts_ffy2017-2025_suppressed.xlsx
+   Local:    eap_counts.xlsx
+
+2. SNAP - Participation Reports 2026 (VDSS), July 2026 report
+   Page:     https://data.virginia.gov/dataset/supplemental-nutrition-assistance-program-snap-participation-reports-2026
+   Download: https://data.virginia.gov/dataset/2995fdf4-a744-4a98-be0b-9dd98f517e50/resource/e5f4ecee-f6b2-4575-b2fe-ec5d7df97cd1/download/july_2026_participation_report.xls
+   Local:    snap_july_2026.xls
+
+3. Electricity Sales (EIA) - sales, revenue, customers & price by sector/state, 2010-2024
+   Page:     https://data.virginia.gov/dataset/electricity-sales
+   Download: https://data.virginia.gov/dataset/7b268107-d6eb-4f27-9805-e2791230b122/resource/50b6cfc1-4b78-470a-9f57-339c4aea384f/download/eia_sales_bysectorstateprovider.xlsx
+   Local:    eia_sales_provider.xlsx
+
+4. Median Household Income 2019-2024 (Virginia series)
+   Page:     https://data.virginia.gov/dataset/median-household-income-2019-2024
+   Download: https://data.virginia.gov/dataset/dc8d2971-0ea2-41e6-949a-ae4f98311db9/resource/351c0744-ff0b-42ec-b103-2299aff487a8/download/median-household-income-in-virginia.xlsx
+   Local:    va_median_hh_income.xlsx
+
+5. USDA ERS County Typology Codes 2025 (metro flag, persistent poverty)
+   Page:     https://data.virginia.gov/dataset/us-county-typology-codes
+   Download: https://data.virginia.gov/dataset/03590586-f125-4166-8f81-93dcbc68e185/resource/6fd9f8d2-f90b-4855-a5dc-5f6cf6766003/download/erscountytypology2025edition.csv
+   Local:    ers_typology_2025.csv
+
+6. DOE Low-Income Energy Affordability Data (LEAD) Tool - 2022 Update, Virginia
+   Page:       https://data.openei.org/submissions/6219
+   Download:   https://data.openei.org/files/6219/VA-2022-LEAD-data.zip
+               (notebook uses "VA FPL Counties 2022.csv" from inside the zip)
+   Dictionary: https://data.openei.org/files/6219/Data%20Dictionary%202022.xlsx
+   Methodology: https://www.energy.gov/sites/default/files/2024-12/lead-methodology_122024.pdf
+   Local:      lead/
+
+7. EIA-861 Annual Electric Power Industry Report, 2024 (utility customers & service territories)
+   Page:     https://www.eia.gov/electricity/data/eia861/
+   Download: https://www.eia.gov/electricity/data/eia861/zip/f8612024.zip
+   Local:    f8612024.zip, eia861/
+
+8. EIA Electric Power Monthly, Table 5.6.B - avg residential price by state, year-to-date
+   (Virginia Jan-Jul 2026 = 16.83 cents/kWh; Jan-Jul 2025 = 14.88)
+   https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_b
+   (Table 5.6.A, monthly, July 2026 = 17.55: https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a)
+
+9. U.S. Census Bureau Cartographic Boundary File - Counties, 2023, 1:5M (maps)
+   Page:     https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html
+   Download: https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_5m.zip
+   Local:    cb_2023_us_county_5m.zip
+
+Datathon 2026 collection (sources 1-5): https://data.virginia.gov/organization/datathon-2026
+
+=====================================================================
+B. REPORTS & POLICY SOURCES (figures and facts cited in the write-up)
+=====================================================================
+
+- JLARC Report 598 (2024), Data Centers in Virginia - $14-$37/month 2040 scenarios (Table 4-2),
+  data-center locations
+  https://jlarc.virginia.gov/pdfs/reports/Rpt598.pdf
+- SCC final order, Dominion biennial review (PUR-2025-00058), Nov 2025 - +$11.24/mo 2026, GS-5 class
+  https://cardinalnews.org/2025/11/26/regulators-approve-dominion-energy-rate-increase/
+  https://www.loudounnow.com/news/scc-approves-new-data-center-rate-class-for-dominion/article_02d5fa0c-1ed8-4771-b57d-c24765739854.html
+- Data Center Electricity Consumption Tax ($0.011/kWh, ~$600M/yr cap, 2026 budget)
+  https://www.williamsmullen.com/insights/news/legal-news/virginia-budget-creates-new-electricity-consumption-tax-data-centers
+  https://www.virginiascope.com/general-assembly-budget-proposal-expected-to-generate-600-million-a-year-in-revenue-from-data-centers/
+- Governor's June 2026 energy bill signings (HB2/SB72, RGGI, etc.)
+  https://www.governor.virginia.gov/newsroom/news-releases/2026/june-releases/name-1120477-en.html
+- HB2 (2026) - low-income oil/propane efficiency upgrades
+  https://lis.virginia.gov/bill-details/20261/HB2
+  https://www.aceee.org/blog-post/2026/04/virginia-ramps-efficiency-efforts-address-energy-affordability-challenges
+- Virginia DSS - Percentage of Income Payment Program (PIPP)
+  https://www.dss.virginia.gov/relief/pipp/
+  https://law.lis.virginia.gov/vacodeupdates/title56/section56-585.6/
+- Virginia rejoins RGGI (July 2026), proceeds allocation
+  https://www.whro.org/environment/2026-07-01/virginia-is-back-in-the-regional-greenhouse-gas-initiative-heres-what-that-means
+- LIHEAP FY2026 funding / Virginia EAP outlook
+  https://www.wmra.org/2026-03-16/officials-anticipate-more-requests-for-electricity-bill-assistance-this-year
+- Utility auto-enrollment via benefits data matching (New York law, Austin Energy)
+  https://www.cdiaonline.org/views/2022/06/01/data-matching-helps-connect-govt-benefits-with-those-in-need/
+  https://www.aarp.org/states/new-york/aarp-ny-lauds-governor-for-signing-bill-requiring-link-up-to-utility-payment-benefit-for-low-income-nyers/
+- Weatherization average cost per home (state WAP plans, 2025)
+  https://energyandhousing.wi.gov/Documents/Weatherization/WAP%20Annual%20File%202025%20Final%20ada.pdf
+  https://www.okcommerce.gov/wp-content/uploads/DOE-WAP-2025-State-Plan-Draft.pdf
+- Datathon challenge & participant info
+  https://www.odga.virginia.gov/datathon/the-challenge/
+  https://www.odga.virginia.gov/datathon/participant-information/
+
+=====================================================================
+C. DOWNLOADED DURING EXPLORATION BUT NOT USED IN THE NOTEBOOK
+=====================================================================
+
+- Childcare Subsidy Data SFY2022-2026 (ccsp_subsidy.xlsx)
+  https://data.virginia.gov/dataset/childcare-subsidy-data-sfy2022-2026
+- Social Services Spending SFY2014-2025 (dss_spending.xlsx)
+  https://data.virginia.gov/dataset/social-services-spending-sfy2014-2025
+- National Database of Childcare Prices (ndcp_county_price.csv, ndcp_county_share.csv)
+  https://data.virginia.gov/dataset/childcare-prices
+- True Cost of Economic Security 2022 (tces_county.xlsx)
+  https://data.virginia.gov/dataset/true-cost-economic-security
+- SNAP Participation Reports 2025, January (snap_jan_2025.xls)
+  https://data.virginia.gov/dataset/supplemental-nutrition-assistance-program-snap-participation-reports-2025
+- EIA Energy Prices, US avg electricity price (eia_avg_price.csv)
+  https://data.virginia.gov/dataset/eia-energy-prices
+- Electricity Sales, US avg retail price table (eia_avg_retail_price.xlsx)
+  https://data.virginia.gov/dataset/electricity-sales
