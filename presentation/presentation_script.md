@@ -1,7 +1,7 @@
 # Who Pays for the Cloud? — 5-Minute Presentation Script
-DRHS DS-Team2 · 2026 Virginia Datathon · Expo presentation, **hard cap 5:00**
+DS-Team2 · 2026 Virginia Datathon · Expo presentation, **hard cap 5:00**
 
-**Spoken length:** 613 words ≈ **4:20** at 145 words/min including 2-second handoffs → **0:40 of buffer** under 5:00. Dropping every *[cut if late]* line saves 33 words (≈ 0:14).
+**Spoken length:** 608 words ≈ **4:18** at 145 words/min including 2-second handoffs → **0:42 of buffer** under 5:00. Dropping every *[cut if late]* line saves 33 words (≈ 0:14).
 
 Deck: `Who_Pays_for_the_Cloud.pptx` (9 slides, all part of the timed talk). The script is also in each slide's speaker notes. `Who_Pays_for_the_Cloud.pdf` is a backup copy if PowerPoint isn't available.
 
@@ -9,16 +9,16 @@ Deck: `Who_Pays_for_the_Cloud.pptx` (9 slides, all part of the timed talk). The 
 
 | # | Slide | Speaker | Start | End | Words |
 |---|---|---|---|---|---|
-| 1 | Title: Who Pays for the Cloud? | Rayhan | 0:00 | 0:17 | 42 |
-| 2 | The trend: Data centers are pushing everyone's power costs up | Rayhan | 0:17 | 0:49 | 77 |
-| 3 | Who can't absorb it: Low-income homes spend 7× more of their income on energy | Ibrahim | 0:51 | 1:18 | 64 |
-| 4 | The gap: Closing the gap costs $749M a year, and existing aid covers 11% | Ibrahim | 1:18 | 1:45 | 67 |
-| 5 | The pattern: Two different problems need two different fixes | James | 1:47 | 2:15 | 66 |
-| 6 | Our solution: The Cloud Dividend: the industry driving costs helps pay | James | 2:15 | 3:09 | 131 |
-| 7 | Where to start: Eight localities stay top-20 in 80%+ of 100,000 simulations | Dyson | 3:11 | 3:40 | 70 |
-| 8 | Feasibility: Every piece already exists, so Virginia can start in 2027 | Dyson | 3:40 | 4:08 | 69 |
-| 9 | Close: The industry driving costs up helps cover them | Dyson | 4:08 | 4:20 | 27 |
-| | **Total** | | | **4:20** | **613** |
+| 1 | Title: Who Pays for the Cloud? | Speaker 1 | 0:00 | 0:17 | 41 |
+| 2 | The trend: Data centers are pushing everyone's power costs up | Speaker 1 | 0:17 | 0:49 | 77 |
+| 3 | Who can't absorb it: Low-income homes spend 7× more of their income on energy | Speaker 2 | 0:51 | 1:17 | 64 |
+| 4 | The gap: Closing the gap costs $749M a year, and existing aid covers 11% | Speaker 2 | 1:17 | 1:45 | 67 |
+| 5 | The pattern: Two different problems need two different fixes | Speaker 3 | 1:47 | 2:14 | 66 |
+| 6 | Our solution: The Cloud Dividend: the industry driving costs helps pay | Speaker 3 | 2:14 | 3:09 | 131 |
+| 7 | Where to start: Eight localities stay top-20 in 80%+ of 100,000 simulations | Speaker 4 | 3:11 | 3:40 | 70 |
+| 8 | Feasibility: Every piece already exists, so Virginia can start in 2027 | Speaker 4 | 3:40 | 4:08 | 69 |
+| 9 | Close: The industry driving costs up helps cover them | Speaker 4 | 4:08 | 4:18 | 23 |
+| | **Total** | | | **4:18** | **608** |
 
 **Checkpoints (the timekeeper holds up fingers):** slide 6 must start by **2:35**; slide 8 must start by **4:05**. If you're past a checkpoint, the remaining speakers drop their *[cut if late]* lines. If you're past **4:40**, skip straight to the slide 9 closing line.
 
@@ -27,55 +27,55 @@ Deck: `Who_Pays_for_the_Cloud.pptx` (9 slides, all part of the timed talk). The 
 Lines in *italics with [cut if late]* are optional; say them only if you're on time.
 
 ### Slide 1 · Title: Who Pays for the Cloud?  
-**Rayhan** · 0:00–0:17
+**Speaker 1** · 0:00–0:17
 
-Virginia is the data-center capital of the world. So who pays for the cloud? We're DRHS Team 2, and our answer is the Cloud Dividend: use the data-center industry's new tax to protect the Virginians who can least afford rising power bills.
+Virginia is the data-center capital of the world. So who pays for the cloud? We're DS-Team 2, and our answer is the Cloud Dividend: use the data-center industry's new tax to protect the Virginians who can least afford rising power bills.
 
 ### Slide 2 · The trend: Data centers are pushing everyone's power costs up  
-**Rayhan** · 0:17–0:49
+**Speaker 1** · 0:17–0:49
 
 Here's the trend. Since 2016, commercial electricity sales, where data centers are counted, are up 60 percent, while homes stayed flat. Building for that demand raises costs for everyone. Residential prices rose 26 percent from 2022 to 2026, and JLARC projects data-center growth alone could add 14 to 37 dollars a month to a typical Dominion bill by 2040. So we asked: who can least afford this, is aid reaching them, and where should help go first?
 
-> Handoff: Rayhan steps aside as Ibrahim starts, with no "now I'll pass it to…". The first sentence of the next slide is the transition.
+> Handoff: Speaker 1 steps aside as Speaker 2 starts, with no "now I'll pass it to…". The first sentence of the next slide is the transition.
 
 ### Slide 3 · Who can't absorb it: Low-income homes spend 7× more of their income on energy  
-**Ibrahim** · 0:51–1:18
+**Speaker 2** · 0:51–1:17
 
 We used the Department of Energy's LEAD data, which breaks down all 133 localities by income, housing, and heating fuel. Households at or below 150 percent of poverty spend 14.3 percent of their income on home energy. The average household spends 2.1. That's seven times more. *[cut if late: Below the poverty line it's 23 percent,]* and with oil or propane heat it's 21 to 26 percent.
 
 ### Slide 4 · The gap: Closing the gap costs $749M a year, and existing aid covers 11%  
-**Ibrahim** · 1:18–1:45
+**Speaker 2** · 1:17–1:45
 
 Affordable is 6 percent of income. Getting every low-income household there costs 749 million dollars a year today, and up to 955 million under JLARC's 2040 scenarios. The Energy Assistance Program paid 82 million in 2025, about 11 percent of the gap, and reached only 28 percent of eligible households. Meanwhile, 276,934 SNAP households, already income-verified by their local DSS office, got no energy aid at all.
 
-> Handoff: Ibrahim steps aside as James starts, with no "now I'll pass it to…". The first sentence of the next slide is the transition.
+> Handoff: Speaker 2 steps aside as Speaker 3 starts, with no "now I'll pass it to…". The first sentence of the next slide is the transition.
 
 ### Slide 5 · The pattern: Two different problems need two different fixes  
-**James** · 1:47–2:15
+**Speaker 3** · 1:47–2:14
 
 When we mapped it, Virginia split into two problems. In orange and gold, mostly rural Southside and the Northern Neck, need is deep: a 1,947-dollar gap per household, driven by oil, propane, and mobile homes. In blue, the metros, the gap is smaller, but aid reaches only 22 percent of eligible households, *[cut if late: and just 14 percent in the data-center localities themselves.]* Two problems need two fixes.
 
 ### Slide 6 · Our solution: The Cloud Dividend: the industry driving costs helps pay  
-**James** · 2:15–3:09
+**Speaker 3** · 2:14–3:09
 
 That's the Cloud Dividend. Virginia's new data-center electricity tax raises about 600 million dollars a year. We put 20 percent, 122 million, into an Energy Relief Fund. Lever one fixes reach: VDSS matches SNAP rolls against utility customer files and automatically enrolls households in EAP and the Percentage of Income Payment Program, which caps bills at 6 percent of income. New York already does this. Nobody has to apply. Serving half of those SNAP households costs 58 million a year. Lever two fixes depth: weatherization and heat pumps for 40,021 oil, propane, and mobile homes, a fifth each year, building on this year's HB2. That's 64 million a year, *[cut if late: and the upgrades pay for themselves in about six years.]* Lever three, our open priority index, tells both levers where to go.
 
-> Handoff: James steps aside as Dyson starts, with no "now I'll pass it to…". The first sentence of the next slide is the transition.
+> Handoff: Speaker 3 steps aside as Speaker 4 starts, with no "now I'll pass it to…". The first sentence of the next slide is the transition.
 
 ### Slide 7 · Where to start: Eight localities stay top-20 in 80%+ of 100,000 simulations  
-**Dyson** · 3:11–3:40
+**Speaker 4** · 3:11–3:40
 
 So where do we start? We didn't want the answer to hinge on one set of weights, so we ranked every locality across 100,000 Monte Carlo simulations, varying prices, incomes, eligibility, and weights. These eight stayed in the top 20 at least 80 percent of the time: Portsmouth, Westmoreland, Radford, Dinwiddie, Mecklenburg, Southampton, Hopewell, and Culpeper. A pilot there costs about 10 million dollars, under 2 percent of the tax.
 
 ### Slide 8 · Feasibility: Every piece already exists, so Virginia can start in 2027  
-**Dyson** · 3:40–4:08
+**Speaker 4** · 3:40–4:08
 
 And it's feasible now. The tax has been in effect since July. DSS offices already run EAP and PIPP. HB2 already requires utility upgrades. So in the 2027 session: earmark the dividend and extend the tax past its 2028 sunset, sign a data-sharing agreement, *[cut if late: pilot in 2028, and scale in 2029.]* And 122 million covers all of the low-case data-center increase and about 60 percent of the high case.
 
 ### Slide 9 · Close: The industry driving costs up helps cover them  
-**Dyson** · 4:08–4:20
+**Speaker 4** · 4:08–4:18
 
-The industry driving costs up can help cover them. The Cloud Dividend protects the Virginians who can least afford the cloud. Thank you. We'd love your questions.
+The industry driving costs up can help cover them. The Cloud Dividend protects the Virginians who can least afford the cloud. Thank you.
 
 ## How this maps to the rubric (5 categories × 5 pts)
 
@@ -85,7 +85,7 @@ The industry driving costs up can help cover them. The Cloud Dividend protects t
 | **Innovation & creativity** | The *Cloud Dividend* framing (the industry driving costs funds the relief); the depth-vs-reach typology (two problems → two fixes); SNAP-based auto-enrollment; Monte Carlo instead of hand-picked weights. |
 | **Relevance to theme** | Energy affordability in Virginia directly. We say "Virginia," "households," and "afford" on every slide; we name the rural/urban divide, demographics (income, renters/owners), infrastructure (heating fuel, housing stock), trends (2016 → 2026 → 2040) and existing programs (EAP, PIPP, HB2, RGGI): all six factors on the challenge page. |
 | **Feasibility** | Slide 8: funding, delivery agency, legal mandate and targeting all already exist; a 4-step timeline; ~$10M pilot (<2% of the tax); 2027 budget-language ask. |
-| **Presentation** | Under 5:00 with buffer; one message per slide in the title; four speakers with clean handoffs; numbers said out loud match the slides; prepared answers (below) for Q&A, including how the numbers were built. |
+| **Presentation** | Under 5:00 with buffer; one message per slide in the title; four speakers with clean handoffs (assign Speakers 1-4 within the team); numbers said out loud match the slides; prepared answers (below) for Q&A, including how the numbers were built. |
 
 ## Delivery rules (presentation score)
 
